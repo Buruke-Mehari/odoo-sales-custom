@@ -7,7 +7,7 @@
         This module adds a credit limit field to customers and validates 
         total outstanding receivables before confirming a Sales Order.
     """,
-    'depends': [
+    'depends': ['base','sale',
         'sale_management', 
         'account',
     ],
