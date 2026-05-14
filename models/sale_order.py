@@ -11,7 +11,7 @@ class ResPartner(models.Model):
 
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
-
+  
     def action_confirm(self):
         _logger.info(">>> Credit Limit Check Started <<<")
         for order in self:
